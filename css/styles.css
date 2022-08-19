@@ -1,137 +1,4 @@
-:root {
-  --acent-color: #2196f3;
-  --logo-black-color: #000000;
-  --h-text-color: #212121;
-  --p-text-color: #757575;
-  --white-text-color: #ffffff;
-  --foot-tel-color: rgba(255, 255, 255, 0.6);
-  --hero-btn-hoover: #188ce8;
-  --bgc-white: #ffffff;
-  --bgc-btn: #f5f4fa;
-  --bgc-hero: #2f303a;
-  --bgc-team: #f5f4fa;
-  --icon-main-fill: #afb1b8;
-  --card-overlay-color: rgba(33, 150, 243, 0.9);
-  --card-content-color: #ffffff;
-  --transition-duration: 250ms;
-  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
-
-
 /* ------- HEADER ------- */
-.header {
-  background-color: var(--bgc-white);
-  border-bottom: 1px solid #ececec;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.header__logo {
-  margin-right: 93px;
-}
-
-.navigation, .navigation__list,
-.contacts {
-  display: flex;
-  align-items: center;
-}
-
-.navigation__list {
-  gap: 50px;
-}
-
-.contacts {
-  margin-left: auto;
-  gap: 50px;
-}
-/* ! сделать bottom logo ! */
-.logo,
-.bottom-logo {
-  color: var(--logo-black-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.navigation__link {
-  position: relative;
-  padding-left: 3px;
-  padding-right: 3px;
-  color: var(--h-text-color);
-}
-
-.navigation__link.current::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--acent-color);
-  border-radius: 2px;
-}
-
-.navigation__link,
-.contacts__mail,
-.contacts__tel {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: color var(--transition-duration) var(--transition-timing-function);
-  outline: transparent;
-}
-
-.contacts__mail,
-.contacts__tel {
-  color: var(--p-text-color);
-  display: flex;
-  align-items: center;
-}
-
-.contacts__tel-icon,
-.contacts__mail-icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.contacts__mail-icon {
-  width: 16px;
-  height: 12px;
-}
-
-.contacts__tel-icon {
-  width: 10px;
-  height: 16px;
-}
-
-.navigation__link:hover,
-.navigation__link:focus,
-.contacts__mail:hover,
-.contacts__mail:focus,
-.contacts__tel:hover,
-.contacts__tel:focus {
-  color: var(--acent-color);
-}
-
-.logo--blue {
-  color: var(--acent-color);
-}
-
-
-
 /* ------- MAIN------- */
 /* hero */
 .hero {
@@ -143,7 +10,7 @@
   padding-bottom: 200px;
   text-align: center;
 
-  background-color: var(--bgc-hero);
+  background-color: var(--bgc-hero-footer);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
   background-position: center;
@@ -154,7 +21,7 @@
 .hero-title {
   width: 696px;
   margin: 0 auto 30px;
-  color: var(--white-text-color);
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -166,7 +33,7 @@
 .submit-btn {
   padding: 10px 32px;
 
-  color: var(--white-text-color);
+  color: var(--white-color);
   background-color: var(--acent-color);
   font-family: inherit;
   font-weight: 700;
@@ -190,7 +57,7 @@
 .hero-btn:focus,
 .submit-btn:hover,
 .submit-btn:focus {
-  background-color: var(--hero-btn-hoover);
+  background-color: var(--btn-hoover);
 }
 
 /* benefits */
@@ -210,9 +77,9 @@
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  box-flex-group: var(--bgc-btn);
+  box-flex-group: var(--bgc-filter-team);
   border-radius: 4px;
-  background-color: var(--bgc-btn);
+  background-color: var(--bgc-filter-team);
 }
 
 .benefits-title,
@@ -275,12 +142,12 @@
 
   background-color: rgba(47, 48, 58, 0.8);
   text-align: center;
-  color: var(--white-text-color);
+  color: var(--white-color);
 }
 
 /* team */
 .team {
-  background-color: var(--bgc-team);
+  background-color: var(--bgc-filter-team);
 }
 
 .team-list {
@@ -296,7 +163,7 @@
 
 .team-item,
 .card-item {
-  background-color: var(--bgc-white);
+  background-color: var(--white-color);
 }
 
 .worker-title {
@@ -355,7 +222,7 @@
 .bottom-soc-link:hover,
 .bottom-soc-link:focus {
   background-color: var(--acent-color);
-  color: var(--bgc-white);
+  color: var(--white-color);
 }
 
 /* clients */
@@ -390,7 +257,7 @@
   padding: 6px 22px;
   border-radius: 4px;
   color: var(--h-text-color);
-  background-color: var(--bgc-btn);
+  background-color: var(--bgc-filter-team);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -406,12 +273,11 @@
 
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--white-text-color);
+  color: var(--white-color);
   background-color: var(--acent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 
 /* cards */
 .card-description {
@@ -450,7 +316,7 @@
   height: 100%;
   padding: 63px 24px;
 
-  color: var(--card-content-color);
+  color: var(--white-color);
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -488,13 +354,13 @@
 }
 
 .bottom {
-  background-color: var(--bgc-hero);
+  background-color: var(--bgc-hero-footer);
   padding: 60px 0;
 }
 
 .bottom-logo {
   display: inline-block;
-  color: var(--white-text-color);
+  color: var(--white-color);
   margin-bottom: 20px;
 }
 
@@ -516,12 +382,12 @@
 }
 
 .bottom-adr {
-  color: var(--white-text-color);
+  color: var(--white-color);
 }
 
 .bottom-mail,
 .bottom-tel {
-  color: var(--foot-tel-color);
+  color: var(--foot-contact-color);
 }
 
 .bottom-adr:hover,
@@ -535,14 +401,13 @@
 
 .bottom-title {
   margin-bottom: 20px;
-  color: var(--bgc-white);
+  color: var(--white-color);
 }
 
 .bottom-soc-link {
-  color: var(--bgc-white);
+  color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
-
 
 .wrap-address {
   width: 231px;
@@ -587,7 +452,7 @@
   border-radius: 4px;
   background-color: transparent;
 
-  color: var(--foot-tel-color);
+  color: var(--foot-contact-color);
   font-size: 16px;
   line-height: 1.25px;
   letter-spacing: 0.03em;
@@ -607,7 +472,7 @@
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--foot-tel-color);
+  color: var(--foot-contact-color);
   font-size: 16px;
   line-height: 1.25px;
   letter-spacing: 0.03em;
@@ -675,14 +540,14 @@
 }
 
 .coment-field {
-display: block;
-margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .order-coment {
   display: block;
   height: 120px;
-  padding: 12px 16px;  
+  padding: 12px 16px;
   resize: none;
 }
 
@@ -782,7 +647,7 @@ margin-bottom: 20px;
   min-height: 581px;
   padding: 40px;
 
-  background: var(--bgc-white);
+  background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -809,8 +674,8 @@ margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--logo-black-color);
-  background-color: var(--bgc-white);
+  color: var(--black-color);
+  background-color: var(--white-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
