@@ -47,6 +47,8 @@
   letter-spacing: 0.03em;
 }
 
+
+
 // третинний
 .tetriary-title {
 }
@@ -69,3 +71,13 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.footer__title {
+  margin-bottom: 20px;
+  color: var(--white-color);  
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+

@@ -1,6 +1,5 @@
 /* ! сделать bottom logo ! */
-.logo,
-.bottom-logo {
+.logo {
   color: var(--black-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -14,6 +13,13 @@
   margin-right: 93px;
 }
 
-.logo--blue {
+.footer__logo {
+  display: inline-block;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.logo__blue {
   color: var(--acent-color);
 }
+
