@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 200px;
   height: 50px;
-  width: 216px;
+
   color: var(--white-color);
   background-color: var(--acent-color);
   font-family: inherit;
@@ -23,9 +24,16 @@
 .hero__btn {
   margin-right: auto;
   margin-left: auto;
+  width: 216px;
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
+.button:hover,
+.button:focus {
   background-color: var(--btn-hoover);
 }
+
+.button__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
+

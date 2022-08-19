@@ -299,8 +299,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 200px;
   height: 50px;
-  width: 216px;
   color: var(--white-color);
   background-color: var(--acent-color);
   font-family: inherit;
@@ -321,11 +321,17 @@ img {
 .hero__btn {
   margin-right: auto;
   margin-left: auto;
+  width: 216px;
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
+.button:hover,
+.button:focus {
   background-color: var(--btn-hoover);
+}
+
+.button__icon {
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 .social {
@@ -434,6 +440,81 @@ img {
 .address__tel:hover,
 .address__tel:focus {
   color: var(--acent-color);
+}
+
+.subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe-form__lable {
+  position: relative;
+  margin-right: 12px;
+}
+
+.subscribe-form__lable:focus-within .subscribe-form__name {
+  color: var(--acent-color);
+  -webkit-transform: translateX(-75px);
+          transform: translateX(-75px);
+}
+
+.subscribe-form__input {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--foot-contact-color);
+  font-size: 16px;
+  line-height: 1.25px;
+  letter-spacing: 0.03em;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: var(--transition-duration);
+          transition-duration: var(--transition-duration);
+  -webkit-transition-timing-function: var(--transition-timing-function);
+          transition-timing-function: var(--transition-timing-function);
+  outline: transparent;
+}
+
+.subscribe-form__input:not(:-moz-placeholder-shown) + .subscribe-form__name {
+  transform: translateX(-75px);
+}
+
+.subscribe-form__input:not(:-ms-input-placeholder) + .subscribe-form__name {
+  transform: translateX(-75px);
+}
+
+.subscribe-form__input:not(:placeholder-shown) + .subscribe-form__name {
+  -webkit-transform: translateX(-75px);
+          transform: translateX(-75px);
+}
+
+.subscribe-form__name {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--foot-contact-color);
+  font-size: 16px;
+  line-height: 1.25px;
+  letter-spacing: 0.03em;
+  -webkit-transition-property: color, -webkit-transform;
+  transition-property: color, -webkit-transform;
+  transition-property: color, transform;
+  transition-property: color, transform, -webkit-transform;
+  -webkit-transition-duration: var(--transition-duration);
+          transition-duration: var(--transition-duration);
+  -webkit-transition-timing-function: var(--transition-timing-function);
+          transition-timing-function: var(--transition-timing-function);
 }
 
 .hero {

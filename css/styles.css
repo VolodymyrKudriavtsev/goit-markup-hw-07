@@ -116,113 +116,12 @@
   letter-spacing: 0.03em;
 }
 /* ------- FOOTER ------- */
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
 /* --------SUBSCRIBE FORM------ */
 
-.subscribe-form {
-  display: flex;
-}
 
-.form-field {
-  position: relative;
-}
 
-.subscribe-form > .form-field {
-  margin-right: 12px;
-}
 
-.form-field:focus-within > .subscribe-lable {
-  color: var(--acent-color);
-  transform: translateX(-75px);
-}
 
-.subscribe-input {
-  align-items: center;
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-
-  color: var(--foot-contact-color);
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
-
-  transition-property: border-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-  outline: transparent;
-}
-
-.subscribe-input:not(:placeholder-shown) + .subscribe-lable {
-  transform: translateX(-75px);
-}
-
-.subscribe-lable {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--foot-contact-color);
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
-  transition-property: color, transform;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-
-.submit-btn:hover,
-.submit-btn:focus {
-  background-color: var(--btn-hoover);
-}
-.submit-btn {
-  color: var(--white-color);
-  background-color: var(--acent-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  border: transparent;
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
-  outline: transparent;
-}
-
-.submit-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  padding: 10px 0;
-}
-
-.subscribe-icon {
-  fill: currentColor;
-  margin-left: 10px;
-}
 
 /* --------ORDER FORM--------- */
 .modal-title {
@@ -235,7 +134,7 @@
   color: var(--h-text-color);
 }
 
-.order-input-name,
+.order-form__name,
 .order-coment::placeholder {
   display: block;
   margin-bottom: 4px;
@@ -244,16 +143,16 @@
   letter-spacing: 0.01em;
 }
 
-.order-form > .form-field {
+.order-form > .subscribe-form__lable {
   display: block;
   margin-bottom: 10px;
 }
 
-.order-input-wrap {
+.order-form__wrap {
   position: relative;
 }
 
-.order-input,
+.order-form__input,
 .order-coment {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -264,7 +163,7 @@
   outline: transparent;
 }
 
-.order-input {
+.order-form__input {
   height: 40px;
   padding-left: 42px;
 }
@@ -281,13 +180,13 @@
   resize: none;
 }
 
-.subscribe-input:focus,
-.order-input:focus,
+.subscribe-form__input:focus,
+.order-form__input:focus,
 .order-coment:focus {
   border-color: var(--acent-color);
 }
 
-.input-icon {
+.order-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -295,7 +194,7 @@
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.form-field:focus-within .input-icon {
+.subscribe-form__lable:focus-within > .order-form__icon {
   fill: var(--acent-color);
 }
 
