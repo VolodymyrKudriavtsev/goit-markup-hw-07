@@ -1,13 +1,10 @@
 .clients__list {
-  display: flex;
-  justify-content: center;
+  @include df-jc-center;
   gap: 30px;
 }
 
 .clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include df-center;
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;

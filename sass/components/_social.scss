@@ -1,13 +1,10 @@
 .social {
-  display: flex;
-  justify-content: center;
+  @include df-jc-center;
   gap: 10px;
 }
 
 .social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include df-center;
   color: var(--icon-main-fill);
   height: 44px;
   width: 44px;

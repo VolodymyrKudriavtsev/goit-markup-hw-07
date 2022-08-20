@@ -1,7 +1,6 @@
 .navigation,
 .navigation__list {
-  display: flex;
-  align-items: center;
+  @include df-ai-center;
 }
 
 .navigation__list {
@@ -10,11 +9,8 @@
 
 .navigation__link {
   position: relative;
-  padding-left: 3px;
-  padding-right: 3px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+  padding: 32px 3px;
+  
   color: var(--h-text-color);
   font-weight: 500;
   font-size: 14px;

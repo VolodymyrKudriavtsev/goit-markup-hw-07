@@ -1,7 +1,5 @@
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include df-center;
   width: 200px;
   height: 50px;
 
@@ -22,14 +20,11 @@
 }
 
 .hero__btn {
-  margin-right: auto;
-  margin-left: auto;
-  width: 216px;
+  @include margin-lr-auto;
 }
 
 .order-form__button {
-  margin-right: auto;
-  margin-left: auto;
+  @include margin-lr-auto;
 }
 
 .button:hover,
@@ -41,4 +36,3 @@
   fill: currentColor;
   margin-left: 10px;
 }
-

@@ -8,9 +8,7 @@
 }
 
 .benefits__thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include df-center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;

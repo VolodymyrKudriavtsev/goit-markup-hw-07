@@ -1,6 +1,5 @@
 .checkbox {
-  display: flex;
-  align-items: center;
+  @include df-ai-center;
   margin-left: 12px;
   font-size: 14px;
   line-height: 1.71;

@@ -1,6 +1,5 @@
 .contacts {
-  display: flex;
-  align-items: center;
+  @include df-ai-center;
 }
 
 .header__contacts {
@@ -10,6 +9,7 @@
 
 .contacts__mail,
 .contacts__tel {
+  @include df-ai-center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -19,9 +19,7 @@
   text-decoration: none;
   transition: color var(--transition-duration) var(--transition-timing-function);
   outline: transparent;
-  color: var(--p-text-color);
-  display: flex;
-  align-items: center;
+  color: var(--p-text-color);  
 }
 
 .contacts__tel-icon,
