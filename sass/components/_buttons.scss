@@ -27,6 +27,11 @@
   width: 216px;
 }
 
+.order-form__button {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--btn-hoover);

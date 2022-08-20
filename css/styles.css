@@ -118,11 +118,6 @@
 /* ------- FOOTER ------- */
 /* --------SUBSCRIBE FORM------ */
 
-
-
-
-
-
 /* --------ORDER FORM--------- */
 .modal-title {
   margin-bottom: 12px;
@@ -132,115 +127,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--h-text-color);
-}
-
-.order-form__name,
-.order-coment::placeholder {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
-
-.order-form > .subscribe-form__lable {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.order-form__wrap {
-  position: relative;
-}
-
-.order-form__input,
-.order-coment {
-  width: 100%;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition-property: border-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-  outline: transparent;
-}
-
-.order-form__input {
-  height: 40px;
-  padding-left: 42px;
-}
-
-.coment-field {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.order-coment {
-  display: block;
-  height: 120px;
-  padding: 12px 16px;
-  resize: none;
-}
-
-.subscribe-form__input:focus,
-.order-form__input:focus,
-.order-coment:focus {
-  border-color: var(--acent-color);
-}
-
-.order-form__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  transition: fill var(--transition-duration) var(--transition-timing-function);
-}
-
-.subscribe-form__lable:focus-within > .order-form__icon {
-  fill: var(--acent-color);
-}
-
-.order-coment::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.check-label {
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 30px;
-  margin-left: 12px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.check-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border: 2px solid;
-  border-color: #212121;
-  border-radius: 2px;
-}
-
-.check-input:focus + .check-icon {
-  border-color: var(--acent-color);
-}
-
-.check-input:checked + .check-icon {
-  background-color: var(--acent-color);
-  border: none;
-}
-
-.check-label a {
-  color: var(--acent-color);
-  margin-left: 5px;
-}
-
-.order-form .submit-btn {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* ---------MODAL--------- */
