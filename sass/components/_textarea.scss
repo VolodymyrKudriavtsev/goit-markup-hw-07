@@ -9,9 +9,7 @@
 .textarea__name {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include fonts (null, 12px, 1.16, 0.01em, null, null);
 }
 
 .textarea__text {
@@ -35,9 +33,7 @@
     display: block;
     margin-bottom: 4px;
     color: rgba(117, 117, 117, 0.5);
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+    @include fonts (null, 12px, 1.16, 0.01em, null, null);
   }
 }
 

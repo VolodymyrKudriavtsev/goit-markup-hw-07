@@ -1,5 +1,5 @@
 .social {
-  @include df-jc-center;
+  @include df-center($ai:null);
   gap: 10px;
 }
 

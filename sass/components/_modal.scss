@@ -1,11 +1,7 @@
 .modal__title {
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--h-text-color);
+  @include fonts (700, 20px, 1.15, 0.03em, null, center);
 }
 
 .modal {

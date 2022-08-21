@@ -1,9 +1,7 @@
 .checkbox {
-  @include df-ai-center;
+  @include df-center($jc:null);
   margin-left: 12px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include fonts (null, 14px, 1.71, 0.03em, null, null);
 }
 
 .order-form__checkbox {
@@ -12,9 +10,7 @@
 }
 
 .checkbox__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @include df-center($d:inline-flex);
   width: 16px;
   height: 15px;
   margin-right: 7px;

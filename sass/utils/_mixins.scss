@@ -1,4 +1,4 @@
-@mixin titles($fw, $fs, $lh, $ls, $tt, $ta) {
+@mixin fonts($fw, $fs, $lh, $ls, $tt, $ta) {
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh;
@@ -7,23 +7,14 @@
     text-align: $ta;
 }
 
-@mixin df-jc-center {
-    display: flex;
-    justify-content: center;
-}
-
-@mixin df-ai-center {
-    display: flex;
-    align-items: center;
-}
-
-@mixin df-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 @mixin margin-lr-auto {
     margin-left: auto;
     margin-right: auto;
+}
+
+
+@mixin df-center ($d:flex, $jc:center, $ai:center) {
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
 }

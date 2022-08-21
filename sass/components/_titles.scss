@@ -2,7 +2,7 @@
 .primary-title {
   width: 696px;
   color: var(--white-color);
-  @include titles(900, 44px, 1.36, 0.06em, uppercase, null);
+  @include fonts (900, 44px, 1.36, 0.06em, uppercase, null);
 }
 
 .hero__title {
@@ -12,7 +12,7 @@
 // вторинний
 .secondary-title {
   color: var(--h-text-color);
-  @include titles (null, 36px, 1.17, 0.03em, null, center);
+  @include fonts (null, 36px, 1.17, 0.03em, null, center);
 }
 
 .work__title,
@@ -23,24 +23,19 @@
 // третинний
 .tetriary-title {
   color: var(--h-text-color);
-  @include titles (null, 14px, 1.14, 0.03em, null, null);
+  @include fonts (null, 14px, 1.14, 0.03em, uppercase, null);
 }
 
 .benefits__title {
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 
 .team__name {
+  @include fonts (500, 16px, 1.19, 0.03em, none, center);  
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
 }
 
 .footer__title {
   margin-bottom: 20px;
   color: var(--white-color);
-  text-transform: uppercase;
 }

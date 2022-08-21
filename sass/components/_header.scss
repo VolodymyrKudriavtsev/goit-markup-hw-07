@@ -3,6 +3,6 @@
   border-bottom: 1px solid #ececec;
 
   .container {
-    @include df-ai-center;
+    @include df-center($jc:null);
   }
 }

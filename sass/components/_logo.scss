@@ -1,11 +1,7 @@
-/* ! сделать bottom logo ! */
 .logo {
   color: var(--black-color);
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include fonts (700, 26px, 1.19, 0.03em, null, null);
   text-decoration: none;
 }
 

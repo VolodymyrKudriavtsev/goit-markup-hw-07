@@ -1,5 +1,4 @@
 // -----SUBSCRIBE-FORM----------
-
 .subscribe-form {
   display: flex;
 }
@@ -8,10 +7,10 @@
   position: relative;
   margin-right: 12px;
 
-  &:focus-within{
+  &:focus-within {
     .subscribe-form__name {
       color: var(--acent-color);
-      transform: translateX(-75px);
+      transform: translateY(-50%) translateX(-75px);
     }
   }
 }
@@ -28,9 +27,7 @@
   background-color: transparent;
 
   color: var(--foot-contact-color);
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
+  @include fonts (null, 16px, 1.25, 0.03em, null, null);
 
   transition-property: border-color;
   transition-duration: var(--transition-duration);
@@ -48,27 +45,21 @@
   top: 50%;
   transform: translateY(-50%);
   color: var(--foot-contact-color);
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
+  @include fonts (null, 16px, 1.25, 0.03em, null, null);
   transition-property: color, transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 
   .subscribe-form__input:not(:placeholder-shown) + & {
-    transform: translateX(-75px);
+    transform: translateY(-50%) translateX(-75px);
   }
 }
 
-
 // -----ORDER-FORM----------
-
 .order-form__name {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include fonts (null, 12px, 1.16, 0.01em, null, null);
 }
 
 .order-form__lable {
@@ -105,5 +96,5 @@
 
   .order-form__lable:focus-within & {
     fill: var(--acent-color);
-  }  
+  }
 }

@@ -1,5 +1,5 @@
 .clients__list {
-  @include df-jc-center;
+@include df-center($ai:null);
   gap: 30px;
 }
 
@@ -25,9 +25,3 @@
 .clients__icon {
   fill: currentColor;
 }
-
-// .clients__link:hover,
-// .clients__link:focus {
-//   color: var(--acent-color);
-//   border-color: var(--acent-color);
-// }

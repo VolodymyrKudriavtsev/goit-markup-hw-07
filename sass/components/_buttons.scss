@@ -6,10 +6,7 @@
   color: var(--white-color);
   background-color: var(--acent-color);
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include fonts (700, 16px, 1.88, 0.06em, null, null);
 
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
