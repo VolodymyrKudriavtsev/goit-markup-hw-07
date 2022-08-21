@@ -7,11 +7,13 @@
 .subscribe-form__lable {
   position: relative;
   margin-right: 12px;
-}
 
-.subscribe-form__lable:focus-within .subscribe-form__name {
-  color: var(--acent-color);
-  transform: translateX(-75px);
+  &:focus-within{
+    .subscribe-form__name {
+      color: var(--acent-color);
+      transform: translateX(-75px);
+    }
+  }
 }
 
 .subscribe-form__input {
@@ -34,14 +36,10 @@
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
   outline: transparent;
-}
 
-.subscribe-form__input:focus {
-  border-color: var(--acent-color);
-}
-
-.subscribe-form__input:not(:placeholder-shown) + .subscribe-form__name {
-  transform: translateX(-75px);
+  &:focus {
+    border-color: var(--acent-color);
+  }
 }
 
 .subscribe-form__name {
@@ -56,6 +54,10 @@
   transition-property: color, transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+
+  .subscribe-form__input:not(:placeholder-shown) + & {
+    transform: translateX(-75px);
+  }
 }
 
 
@@ -88,10 +90,10 @@
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
   outline: transparent;
-}
 
-.order-form__input:focus {
-  border-color: var(--acent-color);
+  &:focus {
+    border-color: var(--acent-color);
+  }
 }
 
 .order-form__icon {
@@ -100,8 +102,8 @@
   left: 12px;
   transform: translateY(-50%);
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.order-form__lable:focus-within .order-form__icon {
-  fill: var(--acent-color);
+  .order-form__lable:focus-within & {
+    fill: var(--acent-color);
+  }  
 }

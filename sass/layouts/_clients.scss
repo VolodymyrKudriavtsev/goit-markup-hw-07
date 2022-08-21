@@ -14,14 +14,20 @@
   transition: color var(--transition-duration) var(--transition-timing-function),
     background-color var(--transition-duration) var(--transition-timing-function);
   outline: transparent;
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+    border-color: var(--acent-color);
+  }
 }
 
 .clients__icon {
   fill: currentColor;
 }
 
-.clients__link:hover,
-.clients__link:focus {
-  color: var(--acent-color);
-  border-color: var(--acent-color);
-}
+// .clients__link:hover,
+// .clients__link:focus {
+//   color: var(--acent-color);
+//   border-color: var(--acent-color);
+// }

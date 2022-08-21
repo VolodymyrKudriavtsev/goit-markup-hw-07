@@ -27,16 +27,15 @@
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
   transition-delay: var(--transition-duration);
-}
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.5) rotate(90deg);
-  opacity: 0;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5) rotate(90deg);
+    opacity: 0;
+  }
 }
 
 .modal__close-button {
   position: absolute;
-
   top: 8px;
   right: 8px;
   width: 30px;
@@ -50,12 +49,15 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
 }
+
 .modal__icon {
   fill: currentColor;
 }
 
-.modal__close-button:hover,
-.modal__close-button:focus {
-  color: var(--acent-color);
-}
+

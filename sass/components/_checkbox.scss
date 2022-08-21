@@ -21,15 +21,15 @@
   border: 2px solid;
   border-color: #212121;
   border-radius: 2px;
-}
 
-.checkbox__input:focus + .checkbox__icon {
-  border-color: var(--acent-color);
-}
+  .checkbox__input:focus + & {
+    border-color: var(--acent-color);
+  }
 
-.checkbox__input:checked + .checkbox__icon {
-  background-color: var(--acent-color);
-  border: none;
+  .checkbox__input:checked + & {
+    background-color: var(--acent-color);
+    border: none;
+  }
 }
 
 .checkbox__link {

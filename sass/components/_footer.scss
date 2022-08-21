@@ -1,11 +1,11 @@
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer {
   background-color: var(--bgc-hero-footer);
   padding: 60px 0;
+
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .wrap-address {

@@ -13,6 +13,11 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   transition: color var(--transition-duration) var(--transition-timing-function);
+  outline: transparent;
+
+  &:hover, &:focus {
+    color: var(--acent-color); 
+  }
 }
 
 .address__link {
@@ -24,11 +29,3 @@
   color: var(--foot-contact-color);
 }
 
-.address__link:hover,
-.address__link:focus,
-.address__mail:hover,
-.address__mail:focus,
-.address__tel:hover,
-.address__tel:focus {
-  color: var(--acent-color);
-}

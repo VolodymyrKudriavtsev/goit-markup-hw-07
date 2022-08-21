@@ -26,17 +26,21 @@
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
   outline: transparent;
+
+  &:focus {
+    border-color: var(--acent-color);
+  }
+
+  &::placeholder {
+    display: block;
+    margin-bottom: 4px;
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
 }
 
-.textarea__text:focus {
-  border-color: var(--acent-color);
-}
 
-.textarea__text::placeholder {
-  display: block;
-  margin-bottom: 4px;
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
+
+

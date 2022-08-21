@@ -19,7 +19,12 @@
   text-decoration: none;
   transition: color var(--transition-duration) var(--transition-timing-function);
   outline: transparent;
-  color: var(--p-text-color);  
+  color: var(--p-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
 }
 
 .contacts__tel-icon,
@@ -36,11 +41,4 @@
 .contacts__tel-icon {
   width: 10px;
   height: 16px;
-}
-
-.contacts__mail:hover,
-.contacts__mail:focus,
-.contacts__tel:hover,
-.contacts__tel:focus {
-  color: var(--acent-color);
 }
